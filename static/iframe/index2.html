@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>横版滚动网页</title>
+	</head>
+
+	<body>
+		<!-- <div class="btn"></div> -->
+		<div class="container">
+			<!-- <div class="section" style="background-color: #f00;">1</div>
+			  <div class="section" style="background-color: #0f0;">2</div>
+			  <div class="section" style="background-color: #00f;">3</div> -->
+						<!-- 根据需要添加更多内容 -->
+				
+			<section id="first" class="box-shander" data-speed="8" data-type="background">
+				<!-- <h1>第一屏</h1> -->
+				<!-- fixed stuff -->
+				<div class="onebox" data-type="sprite" data-offsetY="0" data-Xposition="0%"
+					data-speed="0">
+				</div>
+				<!--  data-left="true" 左边定位移动 false为向右边移动 data-offsetY设置右边偏移量-->
+				<div class="onebox" data-type="sprite" data-offsetY="0" data-Xposition="0%"
+					data-speed="2">
+				</div>
+			</section>
+		
+			<section id="second" class="box-shander" data-speed="4" data-type="background">
+				<div class="onebox" id="two-photo" data-type="sprite" data-offsetY="1200" data-Xposition="0%"
+					data-speed="1">
+				</div>
+				<div class="onebox" id="two-photo" data-type="sprite" data-offsetY="1550" data-Xposition="0%"
+					data-speed="1">
+				</div>
+				<div class="onebox" id="two-photo" data-type="sprite" data-offsetY="800" data-Xposition="0%"
+					data-speed="2">
+				</div>
+			</section>
+			
+			<section id="third" class="box-shander" data-speed="6" data-type="background">
+				<!-- <h1>第3屏</h1> -->
+				<div class="onebox" data-type="sprite" data-offsetY="0" data-Xposition="0%"
+					data-speed="0">
+				</div>
+				<div class="onebox" data-type="sprite" id="third-photo" data-offsetY="500" data-Xposition="0%"
+					data-speed="4">
+				</div>
+				<div class="onebox" data-type="sprite" id="third-photo" data-offsetY="1400" data-Xposition="0%"
+					data-speed="2">
+				</div>
+			</section>
+		
+		
+		</div>
+	</body>
+
+	
+	<link rel="stylesheet" href="../css/two.css">
+	<!-- Our Javascript, starting with jQuery -->
+	<script src='../js/jquery-1.6.1.min.js'></script>
+	<script src="../js/vertical_script.js"></script>
+
+
+</html>

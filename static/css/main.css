@@ -1,0 +1,139 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	/* 防止页面默认滚动条出现 */
+	overflow: hidden;
+}
+
+.container {
+	display: flex;
+	/* 使用flex布局让子元素横向排列 */
+	width: 100vw;
+	/* 视口宽度 */
+	height: 100vh;
+	/* 视口高度 */
+	overflow-x: auto;
+	/* 横向滚动条 */
+	overflow-y: hidden;
+	/* 隐藏纵向滚动条 */
+}
+
+.btn {
+	width: 2.5rem;
+	height: 2.5rem;
+	background-image: url("../../static/images/bbtn.png");
+	background-size: cover;
+	position: absolute;
+	top: 50%;
+	left: 5%;
+}
+
+section {
+	/* 子元素宽度至少为视口宽度 */
+	min-width: 100%;
+	/* min-width: 50%;  */
+	height: 100vh;
+	/* 子元素高度和视口高度一致 */
+	/* 您可以根据需要添加其他样式 */
+}
+
+/* section background */
+#first {
+	background-image: url(../imgone/puckered.png);
+	background-size: 120%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	position: relative;
+}
+#first>.onebox,#second>.onebox,#third>.onebox{
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#first>.onebox:nth-child(1){
+	background-image: url(../imgone/bg1.png);
+	background-position: 0% 100%;
+	width: 30%;
+	left: 0;
+}
+#first>.onebox:nth-child(2){
+	background-image: url(../imgone/bg2.png);
+	background-position: 100% 110%;
+	width: 65%;
+	left: 0;
+}
+#first>.onebox:nth-child(3){
+	background-image: url(../imgone/bg3.png);
+	background-position: 100% 120%;
+	width: 80%;
+	right: 0;
+}
+/* #second { background: url(../static/images/slide2.jpg) 50% 0 no-repeat fixed; } */
+#second {
+	background-image: url(../imgone/tpuckered.png);
+	background-size: 150% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	position: relative;
+}
+
+#second>.onebox:nth-child(1){
+	background-image: url(../imgone/tbg1.png);
+	background-position: 0% 10%;
+	width: 100%;
+	right: 0;
+	z-index: 1;
+}
+#second>.onebox:nth-child(2){
+	background-image: url(../imgone/tbg2.png);
+	background-position: 100% 250%;
+	width: 60%;
+	right: 0;
+	z-index: 0;
+}
+#third {
+	background-image: url(../imgone/puckered.png);
+	background-size: 150% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	position: relative;
+}
+#third>.onebox:nth-child(1){
+	background-image: url(../imgone/thbg1.png);
+	background-position: 0% 0%;
+	width: 60%;
+	left: 0;
+	background-size: 70%;
+}
+#third>.onebox:nth-child(2){
+	background-image: url(../imgone/thbg2.png);
+	background-position: 100% 100%;
+	width: 30%;
+	right: 0;
+	z-index: 1;
+}
+#third>.onebox:nth-child(3){
+	background-image: url(../imgone/thbg3.png);
+	background-position: 100% 200%;
+	width: 30%;
+	right: 0;
+	z-index: 0;
+}
+.box-shander{
+	/* height: 1000px; */
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 50px;
+	padding: 0px;
+	margin: 0px auto;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
