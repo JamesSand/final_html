@@ -57,7 +57,7 @@ section {
 
 #first>.onebox:nth-child(1){
 	background-image: url(../imgtwo/bg1.png);
-	background-position: 0% -450%;
+	background-position: 0% -250%;
 	width: 70%;
 	left: 0;
 	z-index: 1;
@@ -67,6 +67,13 @@ section {
 	background-position: 100% 50%;
 	width: 45%;
 	right: 0;
+	z-index: 0;
+}
+#first>.onebox:nth-child(3){
+	background-image: url(../imgtwo/bg3.png);
+	background-position: 100% -25%;
+	width: 40%;
+	right: 35%;
 	z-index: 0;
 }
 /* #second { background: url(../static/images/slide2.jpg) 50% 0 no-repeat fixed; } */
@@ -81,7 +88,7 @@ section {
 
 #second>.onebox:nth-child(1){
 	background-image: url(../imgtwo/tbg1.png);
-	background-position: 0% -450%;
+	background-position: 0% -250%;
 	width: 70%;
 	left: 0;
 	z-index: 2;
@@ -117,14 +124,14 @@ section {
 }
 #third>.onebox:nth-child(2){
 	background-image: url(../imgtwo/thbg2.png);
-	background-position: 100% -110%;
+	background-position: 100% -50%;
 	width: 70%;
 	right: 0;
 	z-index: 1;
 }
 #third>.onebox:nth-child(3){
 	background-image: url(../imgtwo/thbg3.png);
-	background-position: 100% -850%;
+	background-position: 100% -450%;
 	width: 90%;
 	right: 0;
 	z-index: 2;
